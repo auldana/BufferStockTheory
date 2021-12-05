@@ -1,0 +1,11 @@
+  \node (Female) [startstop] {Female};
+        \node (Male)[startstop, below of = Female]{Male};
+        \node(Before)[startstop, right of = Female, yshift = 2cm, xshift = 2cm]{Before 2020: 58};
+        \node(After)[startstop, below of = Before,]{After 2020: 63};
+        \node(Beforem)[startstop, right of = Male, xshift = 2cm]{Before 2020: 63};
+        \node(Afterm)[startstop, below of = Beforem, yshift = 1cm]{After 2020: 63};
+        \draw[arrow](Female) |- (Before);
+        \draw[arrow](Female) |- (After);
+		\draw[arrow](Male) |- (After);
+		\draw[arrow](Male) |- (Beforem);
+		\draw[arrow](Male) |- (Afterm);        %xshift and yshift
