@@ -1,4 +1,4 @@
-\documentclass[BufferStockTheory]{subfiles}
+\documentclass[ProjectUYA]{subfiles}
 % WARNING: AuCTeX local variables only get reset when file is loaded
 % and differ between this file and BufferStockTheory.tex
 % so must re-load whichever file you want to compile with C-x C-v
@@ -35,7 +35,7 @@
 \keywords{OLG, pension reforms}
 
 
-\renewcommand{\forcedate}{October 21, 2021}\date{\forcedate}
+
 
 \maketitle
 \hypertarget{abstract}{}
@@ -49,17 +49,19 @@
 
 {\titlepagefinish}
 
-\hypertarget{Introduction}{}
+
 \section{Introduction}\label{sec:intro}
 Financial sustainability of pension systems is one the primary concerns of the governments along with the effectiveness of these systems in terms of providing social security assistance to population. Therefore, different government reforms are conducted in response to changing demographics, changes in employment, economic and political shocks. Kazakhstan is among numerous countries that implemented new social security policies in the last twenty years. The country inherited a generous pension system from the Soviet Union with high replacement rate and early retirement age. However, independent Kazakhstan could not continue employing such a system due to economic instability, decrease in formal employment and changing demographics. As a result, Kazakhstan attempted several pension reforms to establish a pension system sustainable in the long term. 
 
 The first major pension reform took place in 1998, which replaced the old pay-as-you-go system with a fully funded pension system, which required workers to make compulsory 10\% contribution to their individual accounts. Under the new reform, only those individuals, who worked at least 6 month prior to 1998 were eligible for pension benefits of old PAYG system. In 2013, another major reform in the pension system was introduced. According to the new law, all pension contributions were to be managed by the Unified Accumulative Pension Fund, replacing private pension funds, asset management companies and the state fund. Moreover, mandatory retirement age for women was increased from 58 to 63. This particular aspect of the reform was negatively received by the population \cite{maltseva}. As a result, the government decided to gradually increase the mandatory retirement age for women by six month each year starting from 2018. In order to provide sufficient replacement rate for the retired population, the government planned to introduce changes in the pension system starting from 2020. The change would have required employers to contribute 5\% of the wages into the individual accounts on top of existing 10\% employee contributions. However, the initiative has been recently postponed until 2023.
 
+\include{\FigDir/Pension-age}
+
 The welfare effects of the proposed pension reforms are of primary interest of this paper. Increase in mandatory retirement age of women from 58 to 63 and introduction of 5\% employer contribution to the individual pension accounts are analyzed in the framework of fully-funded pension system using OLG model. First, brief overview of the existing literature on OLG models and social security systems will be presented. Then, the baseline OLG model will be described. Eventual goal is to do the policy simulations of the proposed pensions reforms. 
 
 
 
-\hypertarget{Literature Review}{}
+
 \section{Literature Review}
 Diamond \cite{diamond} pioneered the use of OLG model in analyzing economic questions, by using two-generation model for the analysis in monetary economics. Since then, more complicated models with more generations have been introduced by the scholars to study wide variety of economic issues. The question of the effectiveness of social security reforms has been addressed by multitude of studies. Auerbach and Kotlikof \cite{auerbach} develop 55 generations OLG model to study the social security system along with other government reforms. The models were extended by the economists to study the various aspects of social security reforms. OLG models are used to compare the effects of fully-funded and PAYG pension systems on different economic indicators such as hours worked, earnings, savings, etc. \cite{buyse} and to study the effects of population aging on an economy \cite{muto}, \cite{heijdra}. A more recent research on the US social security system found that transitioning from PAYG system to a fully-funded one would substantially improve the welfare of all cohorts of households in the model \cite{mcgrattan}.
 
@@ -67,7 +69,7 @@ The effects of changes in mandatory retirement age, pension contribution rates, 
 
 Imrohoroglu and Kitao \cite{imroh}, using microdata from US for calibration, found that increase in retirement age by 2 years leads to higher labor supply and capital stock. While this paper examines the similar question of effects of increase in retirement age, it uses significantly simplified model compared to the one build by Imrohoroglu and Kitao. Their model allows the agents to decide when to retire, making the claim for pension benefits endogenous. Moreover, unlike the model build in this paper, it includes health risks, probability of mortality, and medical expenditures.
 
-\hypertarget{Model}{}
+
 \section{Model}
 This paper's main goal is to analyze the effect of increase in mandatory retirement age for women from 58 to 63 on hours worked, income and welfare under the fully funded pension system using the OLG model.
 
