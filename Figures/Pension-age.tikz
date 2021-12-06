@@ -8,4 +8,4 @@
         \draw[arrow](Female) |- (After);
 		\draw[arrow](Male) |- (After);
 		\draw[arrow](Male) |- (Beforem);
-		\draw[arrow](Male) |- (Afterm);        %xshift and yshift
+		\draw[arrow](Male) |- (Afterm);       

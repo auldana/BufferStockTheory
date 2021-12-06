@@ -13,7 +13,7 @@
 
 \input{./econtexRoot}
 \input{\LaTeXInputs/econtex_onlyinsubfile}
-\onlyinsubfile{\externaldocument{BufferStockTheory}} % Get xrefs -- esp to appendix -- from main file; only works properly if main file has already been compiled;
+\onlyinsubfile{\externaldocument{ProjectUYA}} % Get xrefs -- esp to appendix -- from main file; only works properly if main file has already been compiled;
 
 \begin{document}
 
@@ -40,7 +40,7 @@
 \maketitle
 \hypertarget{abstract}{}
 \begin{abstract}
-  The aim of this paper iss to study the effects of recently introduced pension reform in Kazakhstan on the welfare of the country. The effect of increase in mandatory retirement age for women from 58 to 63 was of primary interest of the paper. In order to achieve this goal, I propose 4-period OLG model with three main sectors of the economy and a fully-funded pension system.
+  The aim of this paper is to study the effects of recently introduced pension reform in Kazakhstan on the welfare of the country. The effect of increase in mandatory retirement age for women from 58 to 63 is of primary interest of the paper. In order to achieve this goal, I propose 4-period OLG model with three main sectors of the economy and a fully-funded pension system.
 \end{abstract}
 
 
@@ -58,8 +58,6 @@ The first major pension reform took place in 1998, which replaced the old pay-as
 \include{\FigDir/Pension-age}
 
 The welfare effects of the proposed pension reforms are of primary interest of this paper. Increase in mandatory retirement age of women from 58 to 63 and introduction of 5\% employer contribution to the individual pension accounts are analyzed in the framework of fully-funded pension system using OLG model. First, brief overview of the existing literature on OLG models and social security systems will be presented. Then, the baseline OLG model will be described. Eventual goal is to do the policy simulations of the proposed pensions reforms. 
-
-
 
 
 \section{Literature Review}
@@ -91,15 +89,7 @@ Until 2018, male and female retirement ages were 63 and 58 for men and women, re
 
  A unit measure of identical households are born each period and live for four periods. Let the age of a household be indexed by $s\in\{1,2,3,4\}.$ Each household is composed of a female and a male. Households get paid wage rate $w_t$ for the labor they offer to firms market and a net return\footnote{gross return minus depreciation $\sigma$} $r_t$. In general, an age-$s$ household
  faces the following\footnote{Note that the budget constraints are written in the most general way possible to make it easier to extend the model. Later we will not have only 4 periods but 56, but the budget constraints will conform to four general time lapses, as described before. } budget constraints:
- \begin{verbatimwrite}{\EqDir/BCs}
-	\label{eq:BCs}
- 	 \begin{align}
- 	c_{s,t+s-1} + k_{s+1,t+s} &= (1-\tau_b)w_t (2-\ell_{s,t}^m - \ell_{s,t}^f) + r_{t+s-1}k_{s,t+s-1} & \forall t\text{ and for $s=1$} \\
- 	c_{s,t+s-1} + k_{s+1,t+s} &= b_{t+s-1}^f+(1-\tau_b)w_t (1-\ell_{s,t}^m ) + r_{t+s-1}k_{s,t+s-1} & \forall t\text{ and for $s=2$} \\
- 	c_{s,t+s-1} + k_{s+1,t+s} &= b_{t+s-1}^f+ b_{t+s-1}^m  + r_{t+s-1}k_{s,t+s-1} & \forall t\text{ and for $s=3$} \\
- 	c_{s,t+s-1} + k_{s+1,t+s} &= b_{t+s-1}^f + r_{t+s-1}k_{s,t+s-1} & \forall t\text{ and for $s=4$} 
- \end{align}
-\end{verbatimwrite}
+ 
 \input{\EqDir/BCs}
 
 Household's are composed of a male and a female, in the periods that they are alive, each sex is endowed with one unit of leisure. At age $s=1$, both of them choose how much leisure to have, i.e., they choose how much labor to supply to the market for every $t$. At age $s=2$ males choose again how much leisure to have for every $t$; but at age $s=3$ males retire so that  $\ell_{s,t}^m=1$ for every $t$; finally,  At age $s=4$ $\ell_{4,t}=0$ for every $t$, since males have died at this point. On the other hand, females are retired from age 2 onwards, so that for $s=2,3,4$, we have that $\ell_{s,t}^f=1$ for every $t.$ The household's supply of labor, by sex, is denoted in general by $l^j=1-\ell^j,$ for $j=m,f.$
@@ -192,7 +182,6 @@ RHS's of the equations 9a and 9b are equal, which allows to establish a relation
 \begin{equation}
 \begin{aligned}
         \gamma(l^m_{1,t})^{\mu-1}=(1-\gamma)(l^f_{1,t})^{\mu-1}
-
 \end{aligned}
 \end{equation}
 
@@ -551,8 +540,6 @@ $l_{1,t+1}^m$; and benefits $b_t^f,b_t^m,b_{t+1}^f$ and $b_{t+1}^m$, i.e. 13 unk
 
 We begin by describing the steady-state equilibrium, which is \emph{exactly identified}. let the steady state of the endogenous variable $x_t$ be characterized by $x_{t+1}=x_t=\bar{x}$ in which the endogenous variables are constant over time. Then we can define the steady-state equilibrium as follows. 
 
-\begin{definition}[Steady-state equilibrium] 
-\label{def:steady-state-eq}
 A non-autarkic steady-state equilibrium in the perfect foresight overlapping generations model with 4-period lived households and endogenous labor supply is defined as constant allocations of consumption $\{\bar{c}_s\}_{s=1}^4$, 
 capital $\{\bar{k}_s\}_{s=2}^4$, labor $(\bar{l}_{1}^m,\bar{l}_1^f,\bar{l}_2^m)$, benefits $(\bar{b}^m,\bar{b}^f)$ and 
 prices $\bar{w}$ and $\bar{r}$  and taxes $\tau_b$ such that:
@@ -562,7 +549,6 @@ prices $\bar{w}$ and $\bar{r}$  and taxes $\tau_b$ such that:
 	\item Firms optimize according to \eqref{eq:foc-firms}.
 	\item Markets clear and the government satisfies its budget constraint according to \eqref{eq:marketclearing}.
 \end{enumerate}
-\end{definition}
 
 The characterizing equations in definition \ref{def:steady-state-eq} reduce to the system \eqref{eq:dyn-eq-Household} and \eqref{eq:dyn-eq-feasibility}. These eight equations are exactly identified in the steady-state. That is, they are eight equations in eight unknowns
 $(\{\bar{k}_s\}_{s=2}^4, \bar{l}_{1}^m,\bar{l}_1^f,\bar{l}_2^m,\bar{b}^m,\bar{b}^f)$. The system characterizing the steady state is 
@@ -589,17 +575,17 @@ v_2(1-\bar{l}_{1}^m,1-\bar{l}_{1}^f)=u'\left((1-\tau_b)\bar{w} (\bar{l}_{1}^m +\
 We can solve for the steady-state $(\{\bar{k}_s\}_{s=2}^4, \bar{l}_{1}^m,\bar{l}_1^f,\bar{l}_2^m,\bar{b}^m,\bar{b}^f)$ by using a unconstrained optimization solver. Then we solve for $\bar{w}$, $\bar{r}$ from the optimality conditions for the firms \eqref{eq:foc-firms} and finally  solve for $\{\bar{c}_s\}_{s=1}^4$ using the household's budget constraints. 
 
 Now we are in a position to define the non-steady-state equilibrium. We start by defining two important concepts.
-\begin{definition}
+
 	{State of a dynamical system} The state of a dynamical system, or otherwise called the \emph{state vector}, is the smallest set of variables that completely summarizes all the information necessary for determining the future of the system at a given point in time. 
-\end{definition}
+
 
 In the present 4-period model, the state vector can be seen from system \eqref{eq:dyn-eq-Household}, \eqref{eq:dyn-eq-feasibility} and \eqref{eq:dyn-eq-Govbudget}. Given the exogenous tax policy 
 $\tau_b$, the smallest set of variables that completely summarize all the information necessary for the 4 generations living at time $t$ to make their consumption, savings and labor/leisure decisions  are given by the distribution of capital $(k_{s,t})_{s=2}^4.$
 
-\begin{definition}
+
 	{Stationary function}
 	We define a stationary function to be a function that only depends upon its arguments and does not depend upon time. 
-\end{definition}
+
 
 For the current model, the relevant examples of stationary functions are the policy functions for savings/investment and labor/leisure choice. 
 We defined the functions $\psi_{1,t}$, $\psi_{2,t}$, $\psi_{3,t}$, $\Lambda_{1,t}^j$, $j=m,f$ and $\Lambda_{2,t}^m$ in equations \eqref{eq:savingspolicy1t}, \eqref{eq:savingspolicy2t}, \eqref{eq:savingspolicy3t}, \eqref{eq:laborpolicymale_t}, \eqref{eq:laborpolicyfemale_t} and
@@ -607,9 +593,9 @@ We defined the functions $\psi_{1,t}$, $\psi_{2,t}$, $\psi_{3,t}$, $\Lambda_{1,t
 
  With the concept of the state of a dynamical system and a stationary function, we are ready to define a functional non-steady-state equilibrium of the model. 
 
- \begin{definition}
- 	{Non-steady-state functional equilibrium}
- 	\label{def:nonsteadyfuncteq}
+
+ 
+ 	
  	A non-steady-state functional equilibrium in the perfect foresight overlapping generations model with 4-period lived households and endogenous labor supply given the exogenous tax policy $(\tau_w,\tau_b)$ is defined as a stationary allocation of functions of the state 
  	\begin{enumerate}
  		\item $\psi_1((k_{s,t})_{s=2}^4)$,
@@ -626,20 +612,17 @@ and stationary price functions $w((k_{s,t})_{s=2}^4)$ and $r((k_{s,t})_{s=2}^4)$
 	\item Firms optimize according to \eqref{eq:foc-firms}.
 	\item Markets clear and the government satisfies its budget constraint according to \eqref{eq:marketclearing}.
 \end{enumerate}
- \end{definition}
 
- We have seen how to boil down the characterizing equations in definition \ref{def:nonsteadyfuncteq} to the system 
- \eqref{eq:dynamicequilibrium}. But we also have seen that those seven equations are not identified. So the question remains how to solve for those equilibrium functions. The solution to the non-steady-state equilibrium in definition \ref{def:nonsteadyfuncteq} is a \emph{fixed point in function space.} We choose functions $\psi_1,\psi_2,\psi_3,\Lambda_1^m,\Lambda_1^f,$ and $\Lambda_1^f$ and verify that they satisfy the characterizing equations for all points in the state space. 
- 
+\section{Parameters}
 
-\subsection{Parameters}
+The parameter values of constant relative risk aversion, depreciation rate of capital, capital and labor shares from the Cobb-Douglas production function for Kazakhstan come from Monthly Research Questions (MRQ) published in the reports of Economic Modeling Development Center, NAC Analytica. Constant relative risk aversion was estimated using an iterative maximum likelihood estimation with the cross-sectional household data on consumption and households reported satisfaction with the economic well-being report for Kazakhstan in 2018. Depreciation rate was estimated using the data for fixed assets of firms for 2015-2018 employing standard capital-investment evolution equation. Capital and labor shares were estimated using the panel data from 2009 to 2017, which includes 5,700 firms. The utility from leisure parameter, $\mu$, needed to be estimated using the household level data on labor supply.
+Due to the lack of Kazakhstani household data, I used the data from Kyrgyzstan household survey in order to have at least an approximate value of the parameter. Male leisure share parameter, $\gamma$, is estimated using the equations 39d and 39e. Due to the lack of household-level data on male and female hours worked for Kazakhstan, the average levels of hours worked were used to estimate the $\gamma$. 
 
-The parameter values of constant relative risk aversion, depreciation rate of capital, capital and labor shares from the Cobb-Douglas production function for Kazakhstan come from “Monthly Research Questions (MRQ)” published in the reports of Economic Modeling Development Center, NAC Analytica \cite{adilkhanova}. Constant relative risk aversion was estimated using an iterative maximum likelihood estimation with the cross-sectional household data on consumption and households’ reported satisfaction with the economic well-being report for Kazakhstan in 2018. Depreciation rate was estimated using the data for fixed assets of firms for 2015-2018 employing standard capital-investment evolution equation. Capital and labor shares were estimated using the panel data from 2009 to 2017, which includes 5,700 firms. The utility from leisure parameter, $\mu$, needed to be estimated using the household level data on labor supply.
-Due to the lack of Kazakhstani household data, I used the data from Kyrgyzstan's household survey in order to have at least an approximate value of the parameter. Male leisure share parameter, $\gamma$, is estimated using the equations 39d and 39e. Due to the lack of household-level data on male and female hours worked for Kazakhstan, the average levels of hours worked were used to estimate the $\gamma$. 
+Obligatory pension contributions are 10\% of employees gross income, and this rate is used for the model simulation. In reality, certain employees (those who work in dangerous conditions) in Kazakhstan are eligible for employer contributions as well. However, these contributions are not included in the model to simplify the computations. Moreover, the citizens of Kazakhstan can make voluntary pension contributions to the centralized pension fund. Voluntary contributions are excluded from the model for the same reason. This should not significantly affect the computations, since voluntary contributions made in 2019 constituted less than 2\% (calculated using UAPF statistics) of total individual contributions.
 
-Obligatory pension contributions are 10\% of employees’ gross income, and this rate is used for the model simulation. In reality, certain employees (those who work in dangerous conditions) in Kazakhstan are eligible for employer contributions as well. However, these contributions are not included in the model to simplify the computations. Moreover, the citizens of Kazakhstan can make voluntary pension contributions to the centralized pension fund. Voluntary contributions are excluded from the model for the same reason. This should not significantly affect the computations, since voluntary contributions made in 2019 constituted less than 2\% (calculated using UAPF statistics) of total individual contributions.
+\bigskip
 
-\input{\TableDir/parameter-values}
+
 
 \onlyinsubfile{\input{\LaTeXInputs/bibliography_blend}}
 \end{document}
