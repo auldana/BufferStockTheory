@@ -6,37 +6,35 @@
 \usepackage{eurosym}
 
 \begin{document}
-% Redefine commands from sty file to signal compilation from master
-\renewcommand{\onlyinsubfile}[1]{}\renewcommand{\notinsubfile}[1]{#1}
-
-\subfile{ProjectUYA-NoAppendix} % Main body of paper
-
-\pagebreak
-
-\bibliography{economics}
-
-\pagebreak
-%\hypertarget{Appendices}{} % Allows link to [url-of-paper]#Appendices
-%\appendix \centerline{\LARGE Appendices}\vspace{0.2in}
-
-\hypertarget{Appendices}{}
-\appendix \centerline{\LARGE Appendices}\vspace{0.2in}
-
-%\subfile{\ApndxDir/ApndxLiqConstr}
-%\subfile{\ApndxDir/ApndxConcaveCFunc}
-%\subfile{\ApndxDir/ApndxEuclidian}
-%\subfile{\ApndxDir/ApndxCGroIsPGro}
-%\subfile{\ApndxDir/ApndxMPCLimits}
-%\subfile{\ApndxDir/ApndxLiqConstrAsLimit}
-%\subfile{\ApndxDir/ApndxSolnMethEndogGpts}
-%\subfile{\ApndxDir/ApndxSolnMethTermFunc}
-%\subfile{\ApndxDir/ApndxConditionDiagrams}
-
-\pagebreak\vfill\eject
-
-%\input{\LaTeXInputs/bibliography_blend.tex}
-%\bibliography{economics}
-
+	% Redefine commands from sty file to signal compilation from master
+	\renewcommand{\onlyinsubfile}[1]{}\renewcommand{\notinsubfile}[1]{#1}
+	
+	\subfile{ProjectUYA-NoAppendix} % Main body of paper
+	
+	\pagebreak
+	
+	\bibliography{economics}
+	
+	\pagebreak
+	%\hypertarget{Appendices}{} % Allows link to [url-of-paper]#Appendices
+	%\appendix \centerline{\LARGE Appendices}\vspace{0.2in}
+	
+	
+	%\subfile{\ApndxDir/ApndxLiqConstr}
+	%\subfile{\ApndxDir/ApndxConcaveCFunc}
+	%\subfile{\ApndxDir/ApndxEuclidian}
+	%\subfile{\ApndxDir/ApndxCGroIsPGro}
+	%\subfile{\ApndxDir/ApndxMPCLimits}
+	%\subfile{\ApndxDir/ApndxLiqConstrAsLimit}
+	%\subfile{\ApndxDir/ApndxSolnMethEndogGpts}
+	%\subfile{\ApndxDir/ApndxSolnMethTermFunc}
+	%\subfile{\ApndxDir/ApndxConditionDiagrams}
+	
+	\pagebreak\vfill\eject
+	
+	\input{\LaTeXInputs/bibliography_blend.tex}
+	%\bibliography{economics}
+	
 \end{document}
 
 

@@ -3,7 +3,7 @@
 scriptDir="$(dirname "$0")"
 
 # Regenerate computed results (figs) needed for compiling paper
-#./reproduce/computed.sh
+./reproduce/computed.sh
 
 echo '' ; echo 'Reproduce text of paper:' ; echo ''
 
@@ -17,7 +17,7 @@ cd Figures
 for fName_tikzMake in *Make.tex; do # names of all files ending in Make.tex
     echo "Processing figure $fName_tikzMake"
     fName=${fName_tikzMake%_tikzMake.tex} # Remove the '_tikzMake.tex' part of the filename
-    cmd="pdflatex -halt-on-error --output-format pdf -output-directory=../$output_directory $fName_tikzMake"
+    cmd="pdflatex-halt-on-error --output-format pdf -output-directory=../$output_directory $fName_tikzMake"
     echo "$cmd"
     eval "$cmd"
     mv -f                                                             "../$output_directory/$fName" "$fName.pdf"
