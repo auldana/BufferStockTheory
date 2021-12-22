@@ -54,17 +54,19 @@
 Financial sustainability of pension systems is one the primary concerns of the governments along with the effectiveness of these systems in terms of providing social security assistance to population. Therefore, different government reforms are conducted in response to changing demographics, changes in employment, economic and political shocks. Kazakhstan is among numerous countries that implemented new social security policies in the last twenty years. The country inherited a generous pension system from the Soviet Union with high replacement rate and early retirement age. However, independent Kazakhstan could not continue employing such a system due to economic instability, decrease in formal employment and changing demographics. As a result, Kazakhstan attempted several pension reforms to establish a pension system sustainable in the long term. 
 
 The first major pension reform took place in 1998, which replaced the old pay-as-you-go system with a fully funded pension system, which required workers to make compulsory 10\% contribution to their individual accounts. Under the new reform, only those individuals, who worked at least 6 month prior to 1998 were eligible for pension benefits of old PAYG system. In 2013, another major reform in the pension system was introduced. According to the new law, all pension contributions were to be managed by the Unified Accumulative Pension Fund, replacing private pension funds, asset management companies and the state fund. Moreover, mandatory retirement age for women was increased from 58 to 63. This particular aspect of the reform was negatively received by the population \cite{maltseva}. As a result, the government decided to gradually increase the mandatory retirement age for women by six month each year starting from 2018. In order to provide sufficient replacement rate for the retired population, the government planned to introduce changes in the pension system starting from 2020. The change would have required employers to contribute 5\% of the wages into the individual accounts on top of existing 10\% employee contributions. However, the initiative has been recently postponed until 2023.
-\include{\FigDir/Pension-age}
 
+\input{\FigDir/Pension-age}
+
+\newpage
 The welfare effects of the proposed pension reforms are of primary interest of this paper. Increase in mandatory retirement age of women from 58 to 63 and introduction of 5\% employer contribution to the individual pension accounts are analyzed in the framework of fully-funded pension system using OLG model. First, brief overview of the existing literature on OLG models and social security systems will be presented. Then, the baseline OLG model will be described. Eventual goal is to do the policy simulations of the proposed pensions reforms. 
 
 
 \section{Literature Review}
-Diamond \cite{diamond} pioneered the use of OLG model in analyzing economic questions, by using two-generation model for the analysis in monetary economics. Since then, more complicated models with more generations have been introduced by the scholars to study wide variety of economic issues. The question of the effectiveness of social security reforms has been addressed by multitude of studies. Auerbach and Kotlikof \cite{auerbach} develop 55 generations OLG model to study the social security system along with other government reforms. The models were extended by the economists to study the various aspects of social security reforms. OLG models are used to compare the effects of fully-funded and PAYG pension systems on different economic indicators such as hours worked, earnings, savings, etc. \cite{buyse} and to study the effects of population aging on an economy \cite{muto}, \cite{heijdra}. A more recent research on the US social security system found that transitioning from PAYG system to a fully-funded one would substantially improve the welfare of all cohorts of households in the model \cite{mcgrattan}.
+\cite{diamond} pioneered the use of OLG model in analyzing economic questions, by using two-generation model for the analysis in monetary economics. Since then, more complicated models with more generations have been introduced by the scholars to study wide variety of economic issues. The question of the effectiveness of social security reforms has been addressed by multitude of studies. Auerbach and Kotlikof \cite{auerbach} develop 55 generations OLG model to study the social security system along with other government reforms. The models were extended by the economists to study the various aspects of social security reforms. OLG models are used to compare the effects of fully-funded and PAYG pension systems on different economic indicators such as hours worked, earnings, savings, etc. \cite{buyse} and to study the effects of population aging on an economy \cite{muto}, \cite{heijdra}. A more recent research on the US social security system found that transitioning from PAYG system to a fully-funded one would substantially improve the welfare of all cohorts of households in the model \cite{mcgrattan}.
 
-The effects of changes in mandatory retirement age, pension contribution rates, and pension benefits under a certain pension system on GDP growth, life-time utility of the consumers, and labor supply have been studied using OLG models. Policy simulation results suggest that increasing retirement age lead to higher GDP growth in both short-run and long-run \cite{cournede}.  Hsu \cite{hsu} analyzes similar pension reforms under PAYG system with four-sector and sixty-generation economy.The author finds that although increasing retirement age lowers life-time utility for current generations, it results in higher life-time utility for future generations. Similarly, increase in contribution rates result in higher GDP growth rate. Karam et.al \cite{karam} find that the positive effect of the higher contribution rates on GDP growth is weaker compared to the effect of increased retirement age. Hsu \cite{hsu} also finds that increase in contribution rate harms government budgetary condition, but leads to higher GDP growth rate.
+The effects of changes in mandatory retirement age, pension contribution rates, and pension benefits under a certain pension system on GDP growth, life-time utility of the consumers, and labor supply have been studied using OLG models. Policy simulation results suggest that increasing retirement age lead to higher GDP growth in both short-run and long-run \cite{cournede}. \cite{hsu} analyzes similar pension reforms under PAYG system with four-sector and sixty-generation economy.The author finds that although increasing retirement age lowers life-time utility for current generations, it results in higher life-time utility for future generations. Similarly, increase in contribution rates result in higher GDP growth rate. \cite{karam} find that the positive effect of the higher contribution rates on GDP growth is weaker compared to the effect of increased retirement age. \cite{hsu} also finds that increase in contribution rate harms government budgetary condition, but leads to higher GDP growth rate.
 
-Imrohoroglu and Kitao \cite{imroh}, using microdata from US for calibration, found that increase in retirement age by 2 years leads to higher labor supply and capital stock. While this paper examines the similar question of effects of increase in retirement age, it uses significantly simplified model compared to the one build by Imrohoroglu and Kitao. Their model allows the agents to decide when to retire, making the claim for pension benefits endogenous. Moreover, unlike the model build in this paper, it includes health risks, probability of mortality, and medical expenditures.
+\cite{imroh}, using microdata from US for calibration, found that increase in retirement age by 2 years leads to higher labor supply and capital stock. While this paper examines the similar question of effects of increase in retirement age, it uses significantly simplified model compared to the one build by Imrohoroglu and Kitao. Their model allows the agents to decide when to retire, making the claim for pension benefits endogenous. Moreover, unlike the model build in this paper, it includes health risks, probability of mortality, and medical expenditures.
 
 
 \section{Model}
@@ -127,33 +129,13 @@ Household's are composed of a male and a female, in the periods that they are al
  where $\gamma<1/2.$
 
 Households choose lifetime consumption, lifetime leisure and savings $\{k_{s+1,t+s}\}_{s=1}^3$ to maximize lifetime utility, subject to the budget constraints and the non-negativity constraints of consumption, savings, and leisure feasibility. 
-\begin{equation}
-\label{eq:household-maximization}
-	\begin{aligned}	
-		\max_{c_t,\ell_t^m,\ell_t^f,\{k_{s+1,t+s}\}_{s=1}^3} & U(c_t,\ell_t) \\
-	&c_{1,t}   = (1-\tau_b)w_t (2-\ell_{1,t}^m - \ell_{1,t}^f) -k_{2,t+1} ,\\
- 	&c_{2,t+1}   = b_{t+1}^f+(1-\tau_b)w_{t+1} (1-\ell_{2,t+1}^m ) + r_{t+1}k_{2,t+1} -k_{3,t+2}  ,\\
- 	&c_{3,t+2}   = b_{t+2}^f+ b_{t+2}^m  + r_{t+2}k_{3,t+2} -k_{4,t+3}  ,\\
- 	&c_{4,t+3}  = b_{t+3}^f + r_{t+3}k_{4,t+3} ,\\
- 	&c_{s,t+s-1}\geq 0, s=1,\ldots,4,\\
-    &k_{s,t+s}\geq 0, s=1,\ldots,3,\\
-    &\ell_{1,t+1}^j\in [0,1],\, j\in\{m,f\},\\
-    &\ell_{2,t+2}^m\in[0,1], \ell_{3,t+2}^m=1,\ell_{4,t+3}^m=0,\\
-    &\ell_{s,t+s-1}^f=1,s=2,\ldots,4\\
-	\end{aligned}	
-\end{equation}
 
+\input{\EqDir/max problem}
 The number of variables in the household's optimization problem  can be reduced by substituting the budget constraints into the optimization problem \eqref{eq:household-maximization}. Furthermore, by standard arguments, we will not need to include the non-negativity and feasibility conditions. Let $\mathcal{L}(\ell_{1,t}^m,\ell_{1,t}^f,\ell_{2,t+1}^m,\{k_{s+1,t+s}\}_{s=1}^3)$ denote the Lagrangian function of the optimization problem \eqref{eq:household-maximization} after substituting the constraints to eliminate lifetime consumption and leisure decisions when retired or dead,  that is:
 
-\begin{equation}
-	\label{eq:lagrangian}
-	\begin{aligned}
-		&\mathcal{L}(\ell_{1,t}^m,\ell_{1,t}^f,\ell_{2,t+1}^m,\{k_{s+1,t+s}\}_{s=1}^3) = u\left((1-\tau_b)w_t (2-\ell_{1,t}^m - \ell_{1,t}^f) -k_{2,t+1}\right) + v(\ell_{1,t}^m,\ell_{1,t}^f)  \\
-		&\qquad + \beta \left[ u\left(b_{t+1}^f+(1-\tau_b)w_{t+1} (1-\ell_{2,t+1}^m ) + r_{t+1}k_{2,t+1} -k_{3,t+2}\right) + v(\ell_{2,t+1}^m,1) \right]\\
-		&\qquad + \beta^{2} \left[ u\left(b_{t+2}^f+ b_{t+2}^m  + r_{t+2}k_{3,t+2} -k_{4,t+3}\right) + v(1,1) \right]\\
-		&\qquad + \beta^{3} \left[ u\left(b_{t+3}^f + r_{t+3}k_{4,t+3}\right) + v(0,1) \right]
-	\end{aligned}
-	\end{equation}
+\input{\EqDir/lagrangian}
+
+
  The maximization problem becomes 
 \begin{equation}
 	\label{eq:maxLagrangian}
@@ -622,7 +604,8 @@ Obligatory pension contributions are 10\% of employees gross income, and this ra
 \bigskip
 \input{\TableDir/parameter-values}
 
-\onlyinsubfile{\input{\LaTeXInputs/bibliography_blend}}
+\newpage
+\input{\LaTeXInputs/bibliography_blend}
 \end{document}
 \endinput
 
